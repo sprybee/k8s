@@ -3,7 +3,9 @@ kind: Service
 metadata:
   name: myservice
 spec:
+  selector:
+    app: myapp
   ports:
     - protocol: TCP
-      port: 8080
+      port: 808
       targetPort: 9376
